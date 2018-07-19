@@ -1,4 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const bundleExtractPlugin = new ExtractTextPlugin({
+  filename: './dist/bundle.css',
+});
+
 module.exports = {
   mode: "development",
   entry: {
@@ -8,6 +14,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    bundleExtractPlugin
+  ],
   module: {
     rules: [{
         test: /\.js$/, // include .js files
@@ -37,11 +46,13 @@ module.exports = {
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       {
         test: /\.scss$/,
+        //use: bundleExtractPlugin.extract({
         use: [
-          "style-loader", // creates style nodes from JS strings
-          "css-loader", // translates CSS into CommonJS
-          "sass-loader" // compiles Sass to CSS
-        ]
+            "style-loader", // creates style nodes from JS strings
+            "css-loader", // translates CSS into CommonJS
+            "sass-loader" // compiles Sass to CSS
+          ]
+          //})
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
