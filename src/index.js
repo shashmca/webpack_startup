@@ -1,1 +1,1 @@
-alert("Hello Team");
+import './styles/component.scss'
