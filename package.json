@@ -1,0 +1,24 @@
+{
+  "name": "webpack_setup",
+  "version": "1.0.0",
+  "description": "webpack demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashmca/webpack_startup.git"
+  },
+  "keywords": [
+    "webpack",
+    "bunding",
+    "demo"
+  ],
+  "author": "Shashank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashmca/webpack_startup/issues"
+  },
+  "homepage": "https://github.com/shashmca/webpack_startup#readme"
+}
