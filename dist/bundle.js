@@ -78,7 +78,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".container {\\n  width: 100%;\\n  height: 200px;\\n  border: 1px solid #000; }\\n  .container .heading {\\n    color: #f00;\\n    font-size: 50px; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles/component.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".container {\\n  width: 100%;\\n  height: 200px;\\n  border: 1px solid #000; }\\n  .container .heading {\\n    color: #ff0;\\n    font-size: 50px; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/styles/component.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./styles/component.scss */ \"./src/styles/component.scss\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n__webpack_require__(/*! ./styles/component.scss */ \"./src/styles/component.scss\");\n\nalert(\"Hello world!!!\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

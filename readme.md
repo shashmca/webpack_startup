@@ -5,6 +5,12 @@ This tutorial is devided into 3 parts:
 2. Webpack configuration
 3. Webpack in action
 
+**Prerequisites**
+1. NodeJS (Install from nodejs.org/ other dependency manager)
+2. Webpack (npm install -g webpack)
+
+Let's start
+
 **Creating & configuting Package.json**
 To create package.json, run following command on root directory.
 
@@ -66,6 +72,14 @@ Now to run dev server, we need to ammend npm script in package.json
 **Webpack in Action**
 
 Let's again run npm script: ```npm run build``` Here you get your server instance running on **localhost:8080** (can be changed through configuration)
+e.g. 
+webpack-dev-server --host 0.0.0.0 --port 80
+or
+```entry: [
+    'webpack-dev-server/client?http://0.0.0.0:80',
+     config.paths.demo
+ ]
+ ```
 
 **Loaders**
 Webpack can handle any type of assets e.g. scripts, styles, fonts, images etc... These assets are handled using loaders. Few loaders are as follows:
@@ -155,8 +169,7 @@ module: {
 Webpack is now ready to load SASS, JS, CSS and fonts. Let's see how it works.
 
 Create following files inside src/styles:
-1. index.css 
-2. component.scss 
+1. component.scss 
 
 **index.css**
 
@@ -187,4 +200,4 @@ Create following files inside src/styles:
 ```
 
 **index.js**
-import './style/index.css'
+import './styles/component.scss'
